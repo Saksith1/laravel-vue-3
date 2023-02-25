@@ -12,7 +12,10 @@
         
         @vite(['resources/js/app.js', 'resources/css/app.css'])
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-red-600">
+        <h1 class="text-3xl font-bold underline">
+            Hello world!
+          </h1>
        <div id="app">
        </div>
     </body>
