@@ -1,10 +1,15 @@
 <template>
-  <h1>{{ title }}</h1>
   <router-view/>
 </template>
 
 <script>
+import store from './store/index'
+import {provide} from 'vue'
+ 
 export default {
+    setup() {
+        provide('store', store)
+    },
     data() {
         return {
             title: 'Welcome page form vue '
